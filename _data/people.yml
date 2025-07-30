@@ -1,16 +1,16 @@
 - name: "Dr. rer. nat. Sebastian Buschjäger"
   role: "Computer Scientist and AI expert"
-  image: "/assets/images/SebastianBuschjaeger.jpg"
+  image: "assets/images/SebastianBuschjaeger.jpg"
   url: "https://www.linkedin.com/in/sebastian-buschjaeger/"
 
 - name: " Dr. rer. medic. Sarah Dietz-Terjung"
   role: "Biologist and medical physicist"
-  image: "/assets/images/SarahDietzTerjung.jpg"
+  image: "assets/images/SarahDietzTerjung.jpg"
   url: "https://www.linkedin.com/in/dr-rer-medic-sarah-dietz-terjung-a45976209/"
 
 - name: "MSc. Matthias Jakobs"
   role: "Computer Scientist and AI expert"
-  image: "/assets/images/MatthiasJakobs.jpg"
+  image: "assets/images/MatthiasJakobs.jpg"
   url: "https://www.linkedin.com/in/matthias-jakobs-319115223/"
 
 # - name: "Prof. John Smith"
