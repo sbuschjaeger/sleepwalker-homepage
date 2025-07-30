@@ -1,0 +1,5 @@
+title: "Sleepwalker"
+description: "Lamarr Institute - Sleep data analytics"
+baseurl: "" # Leave empty if root domain
+url: ""     # Leave empty for local preview
+markdown: kramdown

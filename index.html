@@ -1,0 +1,271 @@
+---
+layout: null
+title: "Sleepwalker | Lamarr Institute"
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }}</title>
+  <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+  <!--  Bootstrap 5  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!--  AOS (Animate On Scroll)  -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    /* ---------------- Root palette ---------------- */
+    :root {
+      --bg-dark: #1a2b3d;
+      --bg-darker: #0c172f;
+      --accent: #1e3a5f;
+      --accent-light: #64aaff;
+      --text-light: #f0f4ff;
+      --bg-light-footer-header: #253544;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      color: var(--accent-light);
+    }
+
+    /* ---------------- Layout helpers ---------------- */
+    .section {
+      padding: 6rem 0;
+    }
+
+    .section:nth-of-type(odd) {
+      background-color: var(--bg-dark);
+    }
+
+    .section:nth-of-type(even) {
+      background-color: var(--bg-darker);
+    }
+
+    .section-heading {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    /*  People cards  */
+    .profile-card {
+      background: var(--accent);
+      border: none;
+      border-radius: 1rem;
+      transition: transform .2s ease;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-4px);
+    }
+
+    footer img {
+        filter: grayscale(100%);
+        transition: filter 0.2s ease, transform 0.2s ease;
+    }
+
+    footer img:hover {
+        filter: grayscale(0%);
+        transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!--  ===== NAVBAR  ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background: var(--bg-light-footer-header);">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#top">
+        <img src="/assets/images/logo.png" alt="Sleepwalker Logo" height="40" />
+        <span class="fw-bold">sleepwalker</span>
+      </a>
+    </div>
+  </nav>
+
+  <!--  ===== HERO  ===== -->
+  <header id="top" class="section text-center" style="padding: 10rem 1rem; background: var(--bg-darker);">
+    <div class="container">
+      <h1 class="display-4 fw-bold" data-aos="fade-down">Sleep analytics re-dreamed 💤</h1>
+      <p class="lead" data-aos="fade-up" data-aos-delay="150">Deep Learning-based tooling from the <strong>Lamarr Institute</strong> for scientists, clinicians & innovators.</p>
+      <a href="#stagging" class="btn btn-lg btn-outline-light mt-4" data-aos="zoom-in" data-aos-delay="300">Explore the project ↓</a>
+    </div>
+  </header>
+
+  <!--  ===== SECTION 1 ===== -->
+  <section id="stagging" class="section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-md-6" data-aos="fade-right">
+          <h2 class="section-heading">Automated Sleep-Stage Tagging and Beyond</h2>
+          <p>
+            Polysomnography (PSG) is the gold standard for diagnosing sleep disorders, but its manual analysis is time-consuming and limited to a few core tasks. Current deep learning methods focus mainly on sleep stage tagging, leaving other key events such as apneas, arousals, and desaturations underexplored.
+
+            In our ongoing work, we integrate leading models - MRASleepNet, TinySleepNet, SleepTransformer, USleep, SeqSleepNet, and AttentionSleep - into a unified benchmark suite. Trained on thousands of hours of PSG data, these models are evaluated not only for sleep stage tagging but also for broader clinical event detection, already outperforming Nox Medical's Noxturnal software on multiple tasks. <b> Stay tuned - results coming soon.</b>
+          </p>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <!--  Figure placeholder  -->
+          <img src="assets/images/automated.png" class="img-fluid rounded-4" alt="Automated Sleep-Stage Tagging and Beyond" style="max-width: 80%;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  ===== SECTION 2 ===== -->
+  <section id="distillation" class="section">
+    <div class="container">
+      <div class="row align-items-center g-5 flex-md-row-reverse">
+        <div class="col-md-6" data-aos="fade-left">
+          <h2 class="section-heading">Knowledge Distillation&nbsp;for Wearables</h2>
+          <p>
+            Wearable-based sleep monitoring can overcome the burdens of lab-based polysomnography that is resource-intensive, uncomfortable for patients, and prone to the first-night effect, where the lab environment alters natural sleep patterns. However, wearable-based sleep monitoring often lacks the accuracy necessary for a real-world deployment. Our knowledge distillation approach transfers expertise from high-performing PSG models to wearable-based models, consistently improving performance across configurations — paving the first steps towards a breakthrough that could revolutionize in-home patient care. 
+          </p>
+          <p>
+            Paper has been accepted at ECML-PKDD 2025 <a href="https://med-time2025.blogs.dsv.su.se/program/"> MedTime Workshop </a>. 
+            <!-- <a href="https://med-time2025.blogs.dsv.su.se/program/">Read the paper ↗</a> -->
+          </p>
+        </div>
+        <div class="col-md-6" data-aos="fade-right">
+          <img src="assets/images/KD.png" class="img-fluid rounded-4" alt="Knowledge Distillation for Wearables" style="max-width: 80%;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  ===== SECTION 3 ===== -->
+  <section id="foundational" class="section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-md-6" data-aos="fade-right">
+          <h2 class="section-heading">Foundational Models for EEG</h2>
+          <p>
+            Our goal is to move state-of-the-art EEG analysis beyond large research centers and into smaller facilities that often lack the compute resources and training data to develop their own models. We are building foundational models for the medical domain, designed to encode time-domain electroencephalogram (EEG) data into rich, high-dimensional latent representations. EEG data play a vital role in neurology, from sleep medicine to the diagnosis and treatment of epilepsy. Trained on millions of EEG patterns from tens of thousands of patients, our models are robust, versatile, and can be adapted to a variety of tasks with minimal additional data or computational resources. This makes it possible to deliver faster, more accurate diagnoses and improved treatments even in settings with limited resources. <b> Stay tuned - results coming soon.</b>
+          </p>
+          <!-- <p>
+            <a href="#">Read the preprint ↗</a>
+          </p> -->
+          <!--  Example table support  -->
+          <!-- <div class="table-responsive mt-4">
+            <table class="table table-dark table-striped table-sm mb-0">
+              <thead>
+                <tr>
+                  <th>Dataset</th>
+                  <th>Samples</th>
+                  <th>Acc. (%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sleep-EDF</td>
+                  <td>153</td>
+                  <td>84.2</td>
+                </tr>
+                <tr>
+                  <td>SHHS</td>
+                  <td>220</td>
+                  <td>87.9</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>-->
+        </div> 
+        <div class="col-md-6" data-aos="fade-left">
+          <img src="assets/images/foundation.png" class="img-fluid rounded-4" alt="EEG foundation model" style="max-width: 80%;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  ===== SECTION 4 ===== -->
+  <section id="dashboard" class="section">
+    <div class="container">
+      <div class="row align-items-center g-5 flex-md-row-reverse">
+        <div class="col-md-6" data-aos="fade-left">
+          <h2 class="section-heading">LLM-Powered Dashboard</h2>
+          <p>
+            We developed an interactive dashboard that visualizes sleep lab data alongside model predictions and integrated a Large Language Model (LLM) for deeper insights. Using advanced prompting techniques, the LLM provides clear, context-aware explanations of classifications while our state of the art classification models provide the predictions — helping clinicians understand complex AI decisions and paving the way for more transparent, data-driven sleep diagnostics.
+          </p>
+          <p>
+            <a href="#">Coming soon ↗</a>
+          </p>
+        </div>
+        <div class="col-md-6" data-aos="fade-right">
+          <img src="assets/images/board.png" class="img-fluid rounded-4" alt="Dashboard preview"  style="max-width: 80%;"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="section">
+    <div class="container text-center" data-aos="fade-up">
+        <h2 class="section-heading mb-4">Get in Touch</h2>
+        <p class="lead mb-4">
+        Interested? Then contact our researchers directly! For researchers we can also provide direct access to our analysis models.
+        </p>
+        <p>
+        <a href="mailto:sebastian.buschjaeger@tu-dortmund.de" class="btn btn-outline-light btn-lg">
+            ✉️ sebastian.buschjaeger@tu-dortmund.de
+        </a>
+        </p>
+    </div>
+    </section>
+
+  <!--  ===== PEOPLE SECTION ===== -->
+  <section id="people" class="section">
+    <div class="container" data-aos="fade-up">
+        <h2 class="section-heading text-center mb-5">Meet the team</h2>
+        <div class="row justify-content-center g-4">
+        {% assign team = site.data.people %}
+        {% for member in team %}
+        <div class="col-6 col-md-3">
+            <div class="card profile-card text-center p-3 h-100">
+            <a href="{{ member.url }}" target="_blank" class="text-decoration-none">
+                <img src="{{ member.image }}"
+                    class="rounded-circle mx-auto mb-3"
+                    alt="{{ member.name }}"
+                    width="120"
+                    height="120" />
+                <h5 class="mb-0 text-light">{{ member.name }}</h5>
+                <small class="text-secondary">{{ member.role }}</small>
+            </a>
+            </div>
+        </div>
+        {% endfor %}
+        </div>
+    </div>
+  </section>
+
+  <!--  ===== FOOTER  ===== -->
+    <footer class="py-3" style="background: var(--bg-light-footer-header);">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 small text-secondary text-center">
+            <span>© {{ "now" | date: "%Y" }} Sleepwalker. Funded by</span>
+            
+            <a href="https://lamarr-institute.org/" target="_blank" rel="noopener" class="d-inline-flex align-items-center">
+            <img src="/assets/images/lamarr.png" alt="Lamarr Institute" height="60" />
+            </a>
+            
+            <a href="https://www.ruhrlandklinik.de/" target="_blank" rel="noopener" class="d-inline-flex align-items-center">
+            <img src="/assets/images/ruhrlandklinik.png" alt="Ruhrlandklinik Essen" height="90" />
+            </a>
+            
+            <span>Built with ❤ & Jekyll.</span>
+        </div>
+    </footer>
+
+  <!--  Scripts  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 600,
+      once: true,
+    });
+  </script>
+</body>
+</html>
